@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio using input element</title>
+</head>
+<body>
+    <form action="/server">
+        <h3>only one selection</h3>
+        <div>
+            <input type="radio" name="fruit" id="apple" value="apple"/>
+            <label for="apple">apple</label>
+            <input type="radio" name="fruit" id="mango" value="mango"/>
+            <label for="mango">mango</label>
+            <input type="radio" name="fruit" id="banana" value="banana"/>
+            <label for="banana">banana</label>
+        </div>
+        <button>submit</button>
+    </form>
+
+    <hr/>
+    <form action="/query">
+        <h3>For multiple selection</h3>
+        <div>
+            <input type="radio" name="fruit1" id="apple" value="apple"/>
+            <label for="apple">apple</label>
+            <input type="radio" name="fruit2" id="mango" value="mango"/>
+            <label for="mango">mango</label>
+            <input type="radio" name="fruit3" id="banana" value="banana"/>
+            <label for="banana">banana</label>
+            <input type="radio" name="fruit4" id="kiwi" value="kiwi"/>
+            <label for="kiwi">kiwi</label>
+            <input type="radio" name="fruit5" id="grapes" value="grapes"/>
+            <label for="grapes">grapes</label>
+        </div>
+        <button>submit</button>
+    </form>
+</body>
+</html>

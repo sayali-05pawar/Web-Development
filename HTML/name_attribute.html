@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name attribute in html</title>
+</head>
+<body>
+    <h1>Action connect by server/file</h1>
+    <form action="/server"> <!--when the user click on submit button the page will be re-directed to the link provided by action-->
+        
+        <!--Label Classical Approach-->
+        <div>
+            <label for="username">Enter your username: </label>
+            <input type="text" id="username" placeholder="username" name="query"/>  
+            <!--Before name attribute after submit: http://127.0.0.1:5500/server? --> 
+            <!--After name attribute & submit: http://127.0.0.1:5500/server?query=asd--> 
+        </div>
+        <div>
+            <label for="pass">Enter your password:</label>
+            <input type="password" id="pass" placeholder="password" name="pass"/>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr/>
+    <br>
+    <h1>Action re-direct to absolute link</h1>
+    <form action="https://www.youtube.com/results?search_query=google">
+        <input type="text" placeholder="search in youtube" name="search_query">
+        <button>search</button>
+    </form>
+
+    <hr/>
+    <form action="https://www.google.com/search">
+        <input type="text" placeholder="search in google">
+        <button>search</button>
+    </form>
+</body>
+</html>

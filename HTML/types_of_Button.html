@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Button</title>
+</head>
+<body>
+    <h1>Action connect by server/file</h1>
+    <form action="/server"> <!--when the user click on submit button the page will be re-directed to the link provided by action-->
+        
+        <!--Label Classical Approach-->
+        <div>
+            <label for="username">Enter your username: </label>
+            <input type="text" id="username" placeholder="username"/>    
+        </div>
+        <div>
+            <label for="pass">Enter your password:</label>
+            <input type="password" id="pass" placeholder="password"/>
+        </div>
+        <div>
+            <label for="age">Enter your Age:</label>
+            <input type="number" id="age" placeholder="age"/>
+        </div>
+
+        <!--Types of button-->
+        <!--TYPE1: Submit button helps to re-direct to the action file; if action is nt given the button will be by default only clickable-->
+        <button type="submit">submit</button> 
+
+        <!--TYPE2: Button sets the given button only in clickable form no re-direction-->
+        <button type="button">button</button>
+
+        <!--TYPE3: Reset button helps to reset the info-->
+        <button type="reset">reset</button>
+        <br>
+        <h1>Button using Input</h1>
+        <!--Types-->
+        <input type="button" value="button"/> <!--normal button-->
+        <input type="submit" value="submit"/> <!--re-direct to action file-->
+    </form>
+</body>
+</html>

@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input forms in html</title>
+    <title>Button and Action attribute in Html</title>
 </head>
 <body>
-    <form action="">
+    <h1>Action connect by server/file</h1>
+    <form action="/server"> <!--when the user click on submit button the page will be re-directed to the link provided by action-->
         
         <!--Label Classical Approach-->
         <div>
@@ -24,6 +25,36 @@
 
         <!--button-->
         <button>submit</button>
+
+        
     </form>
+    <br>
+    <h1>Action is connected with absolute link</h1>
+    <form action="https://en.wikipedia.org/wiki/Student_of_the_Year"> <!--when the user click on submit button the page will be directed to the link provided by action-->
+        
+        <!--Label Classical Approach-->
+        <div>
+            <label for="username">Enter your username: </label>
+            <input type="text" id="username" placeholder="username"/>    
+        </div>
+        <div>
+            <label for="pass">Enter your password:</label>
+            <input type="password" id="pass" placeholder="password"/>
+        </div>
+        <div>
+            <label for="age">Enter your Age:</label>
+            <input type="number" id="age" placeholder="age"/>
+        </div>
+
+        <!--button-->
+        <button>submit</button>
+
+        <!--Form + button inthe form will re-direct you to the action file -->
+        
+    </form>
+
+    <!--Outside form the button will not re-direct to any page-->
+    <button>hello</button>
+
 </body>
 </html>
