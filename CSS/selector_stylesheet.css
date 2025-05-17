@@ -32,3 +32,69 @@ h1,h3{
     background-color: green;
     color: white;
 }
+
+/*Descendant Selector*/
+p a{
+    color: olive;
+    background-color: aqua;
+}
+
+nav ul li a{
+    color: hotpink;
+}
+
+/*Adjacent Sibling Combinator*/
+ p+h3{
+    text-decoration: underline;
+ }
+
+ .upvote + button{
+    background-color: cornflowerblue;
+    color: darkblue;
+ }
+
+ /*Child Combinator*/
+ div > input{
+    background-color: darksalmon;
+ }
+
+ /*Attribute Selector*/
+ input[type="text"]{
+    color: rgb(117, 0, 128);
+ }
+
+ input[type="password"]{
+    color: red;
+ }
+
+ input[type]{
+    background-color: ghostwhite;
+ }
+
+ /*Pseudo Class*/
+
+ /*1. hover :-when your cursor come to the element than it properties will change*/
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+h3:hover {
+    text-decoration: none;
+}
+
+/*2. active :-when you click on the element it will the change color*/
+button:active {
+    background-color: hotpink;
+}
+
+/*3. checked :-used in radio/checkbox elemnt when the cursor clicks to it ; it will change*/
+input[type="radio"]:checked + label{
+    color: red;
+    font-weight: bold;
+}
+
+/*4. nth-of-type :-used to change properties after nth interval*/
+.post:nth-of-type(2n) {
+    background-color: blanchedalmond;
+}
