@@ -43,6 +43,7 @@ nav ul li a{
     color: hotpink;
 }
 
+/*---------------------------------------------------------------------------------------------*/
 /*Adjacent Sibling Combinator*/
  p+h3{
     text-decoration: underline;
@@ -71,6 +72,7 @@ nav ul li a{
     background-color: ghostwhite;
  }
 
+ /*---------------------------------------------------------------------------------------------*/
  /*Pseudo Class*/
 
  /*1. hover :-when your cursor come to the element than it properties will change*/
@@ -97,4 +99,23 @@ input[type="radio"]:checked + label{
 /*4. nth-of-type :-used to change properties after nth interval*/
 .post:nth-of-type(2n) {
     background-color: blanchedalmond;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+/*Pseudo Elements*/
+
+/*1. first-letter*/
+h1::first-letter{
+    color: black;
+}
+
+/*2. first-line*/
+p::first-line{
+    color: darkgreen;
+    font-weight: 900;
+}
+
+/*3. selection */
+p::selection{
+    background-color: brown; /*selected bgcolor will be brown*/
 }
