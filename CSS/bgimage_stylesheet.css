@@ -1,0 +1,21 @@
+div{
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    background-color: #7aa874;
+    margin: 10px auto;
+    color: black;
+    background-image: url("parrot.jpg");
+}
+
+#c{
+    background-size: contain; /*repeat img */
+}
+
+#cr{
+     background-size: cover; /*crop img */
+}
+
+#a{
+     background-size: auto; /*stretch img */
+}
