@@ -1,0 +1,38 @@
+div{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: #7aa874;
+    margin: 20px;
+    border: 3px solid black;
+    display: inline-block;
+}
+
+#static{
+    background-color: yellow;
+    position: static;
+    top: 100px;
+    left: 100px;
+}
+
+#relative{
+    background-color: yellow;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+#absolute{
+    /* NOTE:- no space will be allocated for absolute div */
+    background-color: yellow;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+#fixed{
+    background-color: hotpink;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+}
