@@ -1,0 +1,28 @@
+#container{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    
+    /* flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse; */
+}
+
+h1{
+    text-align: center;
+}
+
+#container div{
+    /* the below height and width are ignore because of 
+    { flex & if the h,w where small & they can fit in parent then they are accepted}
+     and the inner divs are arranged accordingly that they can fix in the parent div*/
+    height: 100px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
