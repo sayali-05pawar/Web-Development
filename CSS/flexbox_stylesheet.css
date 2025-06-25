@@ -10,6 +10,10 @@
     /* flex-direction: column;
     flex-direction: row-reverse;
     flex-direction: column-reverse; */
+
+    /* justify-content: flex-start; 
+     justify-content: center; */
+    justify-content: flex-end;
 }
 
 h1{
@@ -21,7 +25,8 @@ h1{
     { flex & if the h,w where small & they can fit in parent then they are accepted}
      and the inner divs are arranged accordingly that they can fix in the parent div*/
     height: 100px;
-    width: 300px;
+    /* width: 300px; */
+    width: 100px;
     color: white;
     text-align: center;
     font-size: 1.5em;
