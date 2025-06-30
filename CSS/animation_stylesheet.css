@@ -1,0 +1,89 @@
+.box {
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+
+    /* animation-name: fontAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: 3;
+    animation-direction: alternate; */
+
+    /* animation-name: colorAnimate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: normal; */
+
+    /* animation-name: widthAnimate;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: normal; */
+
+    /*ANIMATION SHORTHAND
+    animation: animate 3s ease-in 0s infinite normal;*/
+
+    /* % animation*/
+    animation: coloranime 5s ease-in 0s 2 normal;
+}
+
+@keyframes coloranime{
+    0%{
+        background-color: aquamarine;
+    }
+    25%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: yellowgreen;
+    }
+    75%{
+        background-color: green;
+    }
+    100%{
+        background-color: darkgreen;
+    }
+}
+
+@keyframes animate{
+    from{
+        width: 10px;
+        background-color: green;
+    }
+    to{
+        width: 400px;
+        background-color: cadetblue;
+        border-radius: 15px;
+    }
+}
+
+@keyframes fontAnimation{
+    from{
+        font-size: 20px;
+    }
+    to{
+        font-size: 40px;
+    }
+}
+
+@keyframes colorAnimate{
+    from{
+        background-color: green;
+    }
+    to{
+        background-color: blue;
+    }
+}
+
+@keyframes widthAnimate{
+    from{
+        width: 10px;
+    }
+    to{
+        width: 400px;
+    }
+}
